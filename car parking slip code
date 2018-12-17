@@ -1,0 +1,53 @@
+#include<stdio.h>
+void main()
+{
+    float a;
+    float hours_for_a,hours_for_b,hours_for_c;
+    float parking_charges_for_a,parking_charges_for_b,parking_charges_for_c;
+
+    printf("Enter Total Hours for a = ");
+    scanf("%f",&hours_for_a);
+
+      if(hours_for_a<=3.00)
+        {parking_charges_for_a=2.00;}
+
+    if(hours_for_a>3.00)
+        {parking_charges_for_a=(2.00*3.00)-(4.00)+(hours_for_a-3)*0.50;}
+
+    if (parking_charges_for_a>=10.00)
+        {parking_charges_for_a=10.00;}
+
+
+     printf("Enter Total Hours for b = ");
+    scanf("%f",&hours_for_b);
+
+      if(hours_for_b<=3.00)
+        {parking_charges_for_b=2.00;}
+
+    if(hours_for_b>3.00)
+        {parking_charges_for_b=(2.00*3.00)-(4.00)+(hours_for_b-3)*0.50;}
+
+    if (parking_charges_for_b>=10.00)
+        {parking_charges_for_b=10.00;}
+
+
+     printf("Enter Total Hours for c = ");
+    scanf("%f",&hours_for_c);
+
+    if(hours_for_c<=3.00)
+        {parking_charges_for_c=2.00;}
+
+    if(hours_for_c>3.00)
+        {parking_charges_for_c=(2.00*3.00)-(4.00)+(hours_for_c-3)*0.50;}
+
+    if (parking_charges_for_c>=10.00)
+        {parking_charges_for_c=10.00;}
+
+        printf("parking_charges for a = %.2f",parking_charges_for_a);
+        printf("\nparking_charges for b = %.2f",parking_charges_for_b);
+        printf("\nparking_charges for c = %.2f",parking_charges_for_c);
+
+        a=parking_charges_for_a+parking_charges_for_b+parking_charges_for_c;
+
+        printf("\nsum of all parking_charges = %.2f",a);
+}
